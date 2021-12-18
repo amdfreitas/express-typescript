@@ -2,17 +2,25 @@
   "name": "express-typescript",
   "version": "1.0.0",
   "description": "Projeto  com  express-typescript",
-  "main": "index.js",
+  "main": "./dist/www/app.js",
   "dependencies": {
     "@types/express": "^4.17.13",
-    "express": "^4.17.1"
+    "@types/node": "^16.11.12",
+    "@types/validator": "^13.7.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.6.5"
   },
   "devDependencies": {
     "nodemon": "^2.0.15",
+    "ts-node-dev": "^1.1.8",
     "typescript": "^4.5.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./dist/www/app.js",
+    "build": "tsc",
+    "debug": "ts-node-dev  --inspect --transpile-only --clear --ignore-watch node_modules  ./src/www/app.ts"
   },
   "repository": {
     "type": "git",
