@@ -16,7 +16,7 @@ if (process.env.NODE_ENV === "production") {
 else {
     db = new sequelize_1.Sequelize(default_1.default.dev_mysql.banco_dados, default_1.default.dev_mysql.user, default_1.default.dev_mysql.pass, {
         dialect: "mysql",
-        host: default_1.default.dev_mysql.host,
+        host: default_1.default.produc_mysql.host,
         port: default_1.default.dev_mysql.port
     });
 }

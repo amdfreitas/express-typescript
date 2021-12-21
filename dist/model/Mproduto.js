@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class Produto {
+class Mproduto {
     constructor(codig, nome, preco, descrip) {
         this.codig = codig;
         this.nome = nome;
@@ -8,4 +8,4 @@ class Produto {
         this.descrip = descrip;
     }
 }
-exports.default = Produto;
+exports.default = Mproduto;

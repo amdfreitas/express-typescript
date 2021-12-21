@@ -18,7 +18,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./dist/www/app.js",
+    "start": "node ./www/app.js",
     "build": "tsc",
     "debug": "ts-node-dev  --inspect --transpile-only --clear --ignore-watch node_modules  ./src/www/app.ts"
   },

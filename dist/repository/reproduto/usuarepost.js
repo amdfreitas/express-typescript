@@ -3,53 +3,30 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ProdutoModel = void 0;
+exports.UserModel = void 0;
 const sequelize_1 = require("sequelize");
 const dbconnect_1 = __importDefault(require("../dbconnect"));
-const tbprodut = {
+const tbuser = {
     id: {
         primaryKey: true,
         type: sequelize_1.DataTypes.INTEGER.UNSIGNED,
     },
-    nome: {
+    username: {
         type: sequelize_1.DataTypes.STRING,
     },
-    descricao: {
+    userpasswd: {
         type: sequelize_1.DataTypes.STRING,
     },
-    preco: {
-        type: sequelize_1.DataTypes.FLOAT(10, 2),
+    useremail: {
+        type: sequelize_1.DataTypes.STRING,
     }
 };
 const option = {
     freezeTableName: true,
-    tableName: 'Produto',
+    tableName: 'Usuario',
     timestamp: true,
     createdAt: 'datAcriacao',
     updatedAt: 'datAtualizacao',
     version: 'versao'
 };
-exports.ProdutoModel = dbconnect_1.default.define('Produto', tbprodut, option);
-/*
-interface UserInstance extends Model {
-  id: number;
-  name: string;
-}
-
-const UserModel = db.define<UserInstance>("User", {
-  id: {
-    primaryKey: true,
-    type: DataTypes.INTEGER.UNSIGNED,
-  },
-  name: {
-    type: DataTypes.STRING,
-  },
-  descricao:{
-        type: DataTypes.STRING,
-  },
-  prec:{
-        type: DataTypes.FLOAT(10,2),
-    },
-});
-
-*/
+exports.UserModel = dbconnect_1.default.define('Usuario', tbuser, option);

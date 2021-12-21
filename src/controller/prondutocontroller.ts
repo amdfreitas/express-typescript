@@ -12,7 +12,7 @@ import { ProdutoModel } from "../repository/reproduto/produtrepost";
 	}
 	
 	async produtCreate(req: Request, resp: Response){
-				  const produto={
+	const produto={
 		 'id':210,
 		 'nome':'Anderson asdf',
 		 'preco':23,
