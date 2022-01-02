@@ -2,7 +2,8 @@ import s  from '../config/default';
 import {Sequelize} from  'sequelize';
 let db =null;
 
-        if (process.env.NODE_ENV === "production"){
+        if (process.env.NODE_ENV === "PRODUCT"){
+
 					db = new Sequelize(
 			   			s.produc_mysql.banco_dados,
                         s.produc_mysql.user,
@@ -22,7 +23,7 @@ let db =null;
                         s.dev_mysql.pass,    
                        { 
                            dialect:"mysql",
-                           host: s.dev_mysql.host,
+                           host:s.dev_mysql.host,
                            port:s.dev_mysql.port
                        }
 					);

@@ -18,6 +18,7 @@ exports.default = {
         port: 3306
     },
     server: {
-        porta: 3000
+        dev_porta: 3003,
+        produc_porta: 3000
     }
 };

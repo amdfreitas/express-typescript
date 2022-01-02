@@ -5,7 +5,7 @@ export default  {
 		pass: "123456",
 		banco_dados: "mercadoDB",
 		mysql: "mysql",
-		port:3306
+		port:3302
 	},
 	produc_mysql:{
 		host:"mybanco",
@@ -16,7 +16,8 @@ export default  {
 		port:3306
 	},
 	server: {
-		porta: 3000
+		dev_porta: 3003,
+		produc_porta: 3000
 	}
 	
 }

@@ -1,12 +1,12 @@
 class Mproduto{
 
-	codig: number
+	id: number
 	nome: string;
 	preco: number;
 	descrip: string;
 
-	constructor(codig: number, nome: string ,preco:number,descrip:string){
-		this.codig = codig;
+	constructor(id: number, nome: string ,preco:number,descrip:string){
+		this.id = id;
 		this.nome = nome;
 		this.preco = preco;
 		this.descrip = descrip;
