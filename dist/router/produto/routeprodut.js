@@ -4,8 +4,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
-const prondutocontroller_1 = __importDefault(require("../../controller/prondutocontroller"));
+const produtcontroller_1 = __importDefault(require("../../controller/produtcontroller"));
 const rotasProduto = (0, express_1.Router)();
-rotasProduto.get('/listeall', prondutocontroller_1.default.listaAll);
-rotasProduto.post('/create', prondutocontroller_1.default.produtCreate);
+rotasProduto.get('/listeall', produtcontroller_1.default.listaAll);
+rotasProduto.get('/pesquesid/:id', produtcontroller_1.default.pesquesid);
+rotasProduto.post('/create', produtcontroller_1.default.produtCreate);
 exports.default = rotasProduto;

@@ -3,15 +3,15 @@ export default  {
 	    host: "localhost",
 		user: "root",
 		pass: "123456",
-		banco_dados: "mercadoDB",
+		banco_dados: "lojaflory",
 		mysql: "mysql",
-		port:3302
+		port:3306
 	},
 	produc_mysql:{
 		host:"mybanco",
 		user: "root",
 		pass: "123456",
-		banco_dados: "mercadoDB",
+		banco_dados: "lojaflory",
 		mysql: "mysql",
 		port:3306
 	},

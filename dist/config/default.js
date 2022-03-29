@@ -5,7 +5,7 @@ exports.default = {
         host: "localhost",
         user: "root",
         pass: "123456",
-        banco_dados: "mercadoDB",
+        banco_dados: "lojaflory",
         mysql: "mysql",
         port: 3306
     },
@@ -13,7 +13,7 @@ exports.default = {
         host: "mybanco",
         user: "root",
         pass: "123456",
-        banco_dados: "mercadoDB",
+        banco_dados: "lojaflory",
         mysql: "mysql",
         port: 3306
     },

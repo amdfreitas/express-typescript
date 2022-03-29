@@ -12,12 +12,23 @@ import Mproduto from '../model/modelproduto';
 	}
 	
 	async produtCreate(req: Request, resp: Response){
-	const {id,nome,preco,descrip} = req.body	
-	const produt = new Mproduto(id,nome,preco,descrip)
+		const {id,nome,preco,descrip} = req.body	
+		const produt = new Mproduto(id,nome,preco,descrip)
 
 	 await ProdutoModel.create(produt)
 	    	.then(data => resp.status(201).json(data))
 		    .catch(error => console.log(error));
+	}
+
+	async pesquesid (req: Request, resp: Response){
+		const id = req.params.id;
+		await ProdutoModel.findOne({
+			where: {
+				"id":id
+			}
+		})
+		.then(data => resp.status(201).json(data))
+		.catch(error => console.log(error));
 	}
 }
 

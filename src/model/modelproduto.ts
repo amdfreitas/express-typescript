@@ -10,6 +10,7 @@ class Mproduto{
 		this.nome = nome;
 		this.preco = preco;
 		this.descrip = descrip;
+		
 	}
 
 }

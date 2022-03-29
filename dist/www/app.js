@@ -11,12 +11,12 @@ const servidor = http_1.default.createServer(server_1.default);
 if (process.env.NODE_ENV === "PRODUCT") {
     servidor.listen(default_1.default.server.produc_porta, async () => {
         await dbconnect_1.default.sync();
-        console.log('teste de servidor ', default_1.default.server.produc_porta);
+        console.log('teste de servidor product', default_1.default.server.produc_porta);
     });
 }
 else {
     servidor.listen(default_1.default.server.dev_porta, async () => {
         await dbconnect_1.default.sync();
-        console.log('teste de servidor ', default_1.default.server.dev_porta);
+        console.log('teste de server dev ', default_1.default.server.dev_porta);
     });
 }
