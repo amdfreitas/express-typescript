@@ -1,8 +1,8 @@
-import {Router} from 'express'
-import routProduto  from './produto/routeprodut'
+import { Router } from 'express';
+import routProduto from './produto/routeprodut';
 
-const rotaConfig =  Router();
+const rotaConfig = Router();
 
-rotaConfig.use('/produto',routProduto);
+rotaConfig.use('/produto', routProduto);
 
 export default rotaConfig;
